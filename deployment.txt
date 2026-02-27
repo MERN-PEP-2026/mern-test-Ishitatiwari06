@@ -1,0 +1,2 @@
+BACKEND_LINK=https://mern-test-ishitatiwari06-3.onrender.com
+FRONTEND_LINK=https://mern-test-ishitatiwari06-pxnd.vercel.app/
