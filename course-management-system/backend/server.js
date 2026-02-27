@@ -5,10 +5,13 @@ import dotenv from 'dotenv';
 import authRoutes from './routes/authRoutes.js';
 import courseRoutes from './routes/courseRoutes.js';
 
-const app = express();
 dotenv.config();
+const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://mern-test-ishitatiwari06.vercel.app/',
+    credentials: true
+}));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
